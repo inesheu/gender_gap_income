@@ -1,4 +1,4 @@
-Gender Pay Gap Analysis — Paraguay
+# Gender Pay Gap Analysis — Paraguay
 
 This project analyzes the gender pay gap across occupations using official data from Paraguay’s Instituto Nacional de Estadísticas (INE).
 
