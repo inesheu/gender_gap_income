@@ -1,27 +1,45 @@
-# Gender Pay Gap Analysis — Paraguay
+# Paraguay Income Gender Gap Analysis
 
-This project analyzes income disparities by gender across occupations using official data from Paraguay’s Instituto Nacional de Estadísticas (INE).
+This repository contains Python code to analyze gender pay gaps using Paraguay’s INE survey data (2022-2025).
+
+## Data Files
+
+- CSV files are named with the format: `Trimester_Year.csv`
+  - Example: `EPHC_1_2022.csv` means first trimester of 2022.
+- Data covers multiple years and trimesters.
 
 ## Columns Used
 
-- `P06` (`gender`): Gender code (1 = Men, 6 = Women)
-- `E01AIMDE` (`main_monthly_income`): Monthly income in Guaraníes
-- `anoest` (`years_of_study`): Years of education
-- `CATE_PEA` (`occupation_category`): Occupation code as string
+| CSV Column | Description           | Alias in Code          |
+|------------|-----------------------|-----------------------|
+| P06        | Gender code           | `gender`              |
+| E01AIMDE   | Main monthly income   | `main_monthly_income` |
+| anoest     | Years of study        | `years_of_study`      |
+| CATE_PEA   | Occupation category   | `occupation_category` |
 
-## Occupation Codes
+## Occupation Category Codes
 
-| Code | Occupation Label            |
-|-------|----------------------------|
-| '1'   | Public employee / worker   |
-| '2'   | Private employee / worker  |
-| '3'   | Employer or boss           |
-| '4'   | Self-employed worker       |
-| '5'   | Unpaid family worker       |
-| '6'   | Domestic worker            |
+| Code | Description                 |
+|-------|-----------------------------|
+| 1     | Public employee / worker    |
+| 2     | Private employee / worker   |
+| 3     | Employer or boss            |
+| 4     | Self-employed worker        |
+| 5     | Unpaid family worker        |
+| 6     | Domestic worker             |
 
-Codes such as `9` (NR), `NA`, and `Blanco` are excluded.
+*Codes like '9' (NR), 'NA', and 'Blanco' are excluded.*
 
-## Purpose
+## Usage
 
-To provide clear, data-driven insights that reveal the persistent gender pay gap in Paraguay, encouraging informed discussion and action.
+- Load and clean CSV data using the columns above.
+- Use the provided code to analyze income by gender and occupation.
+- Income values are processed and displayed in millions of Guaraníes.
+
+## Source
+
+Data comes from the [Instituto Nacional de Estadísticas (INE), Paraguay](https://www.ine.gov.py/).
+
+---
+
+*For full code and details, see the Python scripts in this repository.*
